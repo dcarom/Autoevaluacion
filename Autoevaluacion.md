@@ -31,7 +31,7 @@ R = 1.03;
 
 y_total = 100;
 
-consumo = zeros(1000, 20000); 
+Utilidad_final = zeros(1000, 20000); 
 
 C = zeros(20000,2);
 
@@ -58,7 +58,7 @@ posicion = zeros(1,1000);
 consumo_optimo = zeros(1000,2); 
 
 for i = 1:1000
-    [maximo(i), posicion(i)] = max(consumo(i,:)); 
+    [maximo(i), posicion(i)] = max(Utilidad_final(i,:)); 
 
     c1_optimo = C_grid(posicion(i));
     
